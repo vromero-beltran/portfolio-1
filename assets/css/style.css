@@ -16,14 +16,21 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 18px;
-    line-height: 2em
+    line-height: 2em;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui;
+
   }
   
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: max(2vh, 1rem);
+    width: 100%;
+    height: 80px;
+    padding: 0px 100px;
     background-color: var(--dark);
     color: var(--dark);
   }
@@ -73,4 +80,20 @@ body {
 
   .nav-right:hover {
     transform: translateY(-10px);
+  }
+
+  .pic-1 img{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .subtitle {
+    background-color:#224b71;
+    background-image: url("../assets/images/Eevee\ side\ pic#1.jpg");
+    background-size: cover;
+  }
+  .subcon{
+    color: var(--light);
   }
