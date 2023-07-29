@@ -2,15 +2,18 @@
     --dark: #13293d;
     --light: #02c9df;
 }
+/* (:root)- saves commands to use over and over again.*/
 
 .animate {
     animation-duration: 1s;
     animation-fill-mode: both;
 }
+/* (.animation)- class used for the duration of the bounce, and makes a smooth bounce.*/
 
-html {
-  color-scheme: #010101;
+h1, h2, h3 {
+  text-wrap: balance;
 }
+/* (text-wrap)- makes a title wrap down when screen is smaller to look better*/
 
 body {
     display: flex;
@@ -21,19 +24,20 @@ body {
     padding: 0px;
     box-sizing: border-box;
     font-family: system-ui;
-
   }
+  /* set the body of HTML to the correct sizing and diretcion of texts/images.*/
   
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width:auto;
     height: 80px;
     padding: 0px 100px;
     background-color: var(--dark);
     color: var(--dark);
   }
+  /* moves content inside header to where I want it*/
   
   h1 {
     font-size: clamp(3rm, 10vw + 1rm, 5rem);
@@ -41,6 +45,8 @@ body {
     background-color: var(--light);
     color: var(--dark);
   }
+/* Changes the size, font, color of text, and background-color.*/
+
   @keyframes bounce {
     0%,
     20%,
@@ -60,40 +66,138 @@ body {
   .bounce {
     animation-name: bounce;
   }
+  /* Makes my name in the header bounce.*/
 
   nav ul {
     display: flex;
     justify-content: space-between;
-    min-width: 350px;
   }
+  /* spaces out the list in the header*/
   
   nav a {
     color: var(--light);
     font-weight: bold;
     text-decoration: underline;
+    /* makes changes to the text on the right navbar*/
   }
   .nav-right {
-    font-weight: 700;
-    padding: 0.5em 1em;
+    padding: 20px;
     transition: transform 0.3s;
   }
+  /* Adds space and gives a transform timing for hover*/
 
   .nav-right:hover {
     transform: translateY(-10px);
   }
-
-  .pic-1 img{
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-  }
+  /* When hover over items on right navbar, makes them jump up and stay up while course is on them.*/
 
   .subtitle {
     background-color:#224b71;
-    background-image: url("../assets/images/Eevee\ side\ pic#1.jpg");
-    background-size: cover;
+    width: 100%;
   }
+  /* Parent of subtitle seatting to move it around.*/
+
+
   .subcon{
     color: var(--light);
+    text-align: center;
+  }
+
+  main {
+    display: flex;
+    align-self: flex-start;
+    min-height: 100vh;
+    background-color:;
+  }
+
+  .wrapper {
+    margin-left: 350px;
+    width: 70%;
+    color: #02c9df;
+    background-color: #13293d;
+  }
+
+  .text-box {
+    font-size: 16px;
+    text-wrap: balance;
+
+  }
+
+  .wrapper-2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+
+  }
+
+  #pictures {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .pictures img {
+    width: 500px;
+    height: 200px;
+    object-fit: fill;
+    
+  }
+
+  .pictures {
+    border: 5px solid;
+  }
+
+  .pictures:hover {
+    
+  }
+
+  .pictures2 img {
+    width: 500px;
+    height: 200px;
+    object-fit: fill;
+  }
+
+  .pictures2 {
+    margin-left: 5px;
+    border: 5px solid;
+  }
+
+  .pictures2:hover {
+    
+  }
+
+  .pictures3 img {
+    width: 500px;
+    height: 200px;
+    object-fit: fill;
+  }
+
+  .pictures3 {
+    margin-top: 5px;
+    border: 5px solid;
+  }
+
+  .pictures3:hover {
+    
+  }
+
+  .pictures4 img {
+    width: 500px;
+    height: 200px;
+    object-fit: fill;
+  }
+
+  .pictures4 {
+    margin-top: 5px;
+    margin-left: 5px;
+    border: 5px solid;
+  }
+
+  .pictures4:hover {
+    
+  }
+  
+  aside {
+    float: left;
+    margin-right: 30px;
   }

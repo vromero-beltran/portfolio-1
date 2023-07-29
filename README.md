@@ -104,3 +104,36 @@ You are required to submit BOTH of the following for review:
 
 - - -
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+  .pictures {
+    border: 5px solid;
+  }
+  .pictures img {
+    width: 900px;
+    height: 360px;
+    object-fit: fill;
+    
+  }
+
+  
+
+        
+          <section>
+          <aside>
+            <h2>Contact Me</h2>
+          </aside>
+          <ul>
+            <li class="nav-right"><a href="#">(555) 555-5555</a></li>
+            <li class="nav-right"><a href="#">Email@email.com</a></li>
+            <li class="nav-right"><a href="#">Twitter</a></li>
+            <li class="nav-right"><a href="#">spotify</a></li>
+          </ul>
+                  <section>
+          <aside>
+            <h2>Work</h2>
+          </aside>
+          <div class="mainpic">
+            <section class="pictures rightside">
+              <img src="./assets/images/beach view.jpg" alt="Beautiful beach view.">
+            </section>
+          </div>
