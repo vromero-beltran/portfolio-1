@@ -149,7 +149,7 @@ body {
   .me {
     border: 5px solid var(--light);
   }
-  /* adds a border on the picture of me.*/
+  /* adds a border on the picture of me and no added img lock sizing to makes it where I jump out and in as you adjust the screen.*/
 
   .wrapper-2 {
     margin-top: 20px;
