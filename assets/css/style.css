@@ -16,15 +16,21 @@ h1, h2, h3 {
 }
 /* (text-wrap)- makes a title wrap down when screen is smaller to look better*/
 
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 350px;
+}
+/* sets all img's to a max size to look better in all screen sizes*/
+
 body {
     display: flex;
     flex-direction: column;
     font-size: 18px;
     line-height: 2em;
-    margin: 0px;
-    padding: 0px;
+    margin: 0%;
     box-sizing: border-box;
-    font-family: system-ui;
+    font-family: sans-serif;
   }
   /* set the body of HTML to the correct sizing and diretcion of texts/images.*/
   
@@ -32,13 +38,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width:auto;
-    height: 80px;
-    padding: 0px 100px;
+    flex-wrap: wrap;
+    padding: 0px 15px;
+    padding-block: 2rem;
     background-color: var(--dark);
     color: var(--dark);
+    line-height: 1;
   }
   /* moves content inside header to where I want it*/
+
+  .top {
+    display: flex;
+    flex-wrap: wrap;
+  }
   
   h1 {
     font-size: clamp(3rm, 10vw + 1rm, 5rem);
@@ -95,16 +107,8 @@ body {
   .subtitle {
     background-color: var(--mid);
     width: 100%;
-    height: 50vh;
   }
   /* Parent of subtitle seatting to move it around.*/
-
-  .me {
-    height: 250px;
-    width: 200px;
-  }
-  /* changed the size of picture of me.*/
-
 
   .subcon{
     color: var(--dark);
@@ -114,101 +118,84 @@ body {
 
   main {
     display: flex;
-    align-self: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-block: 2rem;
     min-height: 100vh;
-    background-color: var(--dark);
+    background-color:black;
+    background-image: url(../images/beach\ view.jpg);
+    background-blend-mode:hard-light;
+    background-attachment: fixed;
+    background-size: cover;
   }
   /* changes everything in the parent of main element to flex start and gives my height with color*/
 
   .wrapper {
-    margin-left: 350px;
+    padding: 0 1em;
     width: 70%;
     color: var(--light);
   }
   /* give everything under this wrapper attribute a margin from the left and color */
 
   .text-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     font-size: 16px;
     text-wrap: balance;
   }
   /* changes the font of the text and makes it look good in smaller screens*/
 
-  .wrapper-2 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items:flex-start;
+  .me {
+    border: 5px solid var(--light);
   }
+  /* adds a border on the picture of me.*/
 
-  #pictures {
+  .wrapper-2 {
+    margin-top: 20px;
+    padding: 0 1em;
+    width: 70%;
+    color: var(--light);
+  }
+  /* adjust left, right, top, and bottom spacing*/
+
+  .all-pictures {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
+  /* makes the pictures all fit next to each other or under*/
 
-  .pictures img {
-    width: 500px;
-    height: 200px;
+  .all-pictures img {
+    width: 200px;
+    height: 190px;
     object-fit: fill;
-    
+    border: 5px solid var(--light);
   }
+  /* add borders to pictures and fix some sizing issues*/
 
-  .pictures {
-    border: 5px solid;
+  .picture-text {
+    color: var(--light);
   }
+  /* Change image text color*/
 
-  .pictures:hover {
-    
-  }
-
-  .pictures2 img {
-    width: 500px;
-    height: 200px;
-    object-fit: fill;
-  }
-
-  .pictures2 {
+  .picture2 {
     margin-left: 5px;
-    border: 5px solid;
   }
+  /* Change some spacing from the left*/ 
 
-  .pictures2:hover {
-    
-  }
-
-  .pictures3 img {
-    width: 500px;
-    height: 200px;
-    object-fit: fill;
-  }
-
-  .pictures3 {
-    margin-top: 5px;
-    border: 5px solid;
-  }
-
-  .pictures3:hover {
-    
-  }
-
-  .pictures4 img {
-    width: 500px;
-    height: 200px;
-    object-fit: fill;
-  }
-
-  .pictures4 {
-    margin-top: 5px;
+  .picture3 {
     margin-left: 5px;
-    border: 5px solid;
   }
 
-  .pictures4:hover {
-    
+  .picture4 {
+    margin-left: 5px;
   }
+  /* Change some spacing from the left*/
   
   aside {
     float: left;
-    margin-right: 30px;
+    margin-right: 100px;
   }
 
   .wrapper-3 {
@@ -217,15 +204,27 @@ body {
     padding-left: 15%;
   }
 
-  .foo {
+  .bottom {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  footer h2 {
+    display: flex;
     justify-content: center;
   }
 
   .footer {
-    padding: 20px;
+    padding: 25px;
     transition: transform 0.3s;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .footer1 {
+    padding: 25px;
     font-weight: bold;
     text-decoration: underline;
   }
