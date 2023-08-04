@@ -131,6 +131,8 @@ body {
   /* changes everything in the parent of main element to flex start and gives my height with color*/
 
   .wrapper {
+    display: flex;
+    flex-wrap: wrap;
     padding: 0 1em;
     width: 70%;
     color: var(--light);
